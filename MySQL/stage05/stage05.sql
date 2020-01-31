@@ -1,0 +1,1 @@
+SELECT moves.identifier AS attaque FROM moves INNER JOIN pokemon_moves ON moves.id = pokemon_moves.move_id WHERE pokemon_moves.pokemon_id = (SELECT id FROM pokemon WHERE identifier = 'snorlax') LIMIT 5;
